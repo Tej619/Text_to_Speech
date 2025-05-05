@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
     private boolean isRecording = false;
 
     // Deepgram API Configurations
-    private static final String DEEPGRAM_API_KEY = "bca7c19847394764dd2bb6c808f484662922e8a9";
+    private static final String DEEPGRAM_API_KEY = "GIVE_YOUR_OWN_KEY";
     private static final String DEEPGRAM_API_URL = "https://api.deepgram.com/v1/listen?model=nova-3&smart_format=true";
     private final OkHttpClient client = new OkHttpClient.Builder()
             .connectTimeout(30, TimeUnit.SECONDS)
