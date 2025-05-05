@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Speech Recognition App"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/textView_instruction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Tap the mic button and start speaking"
+        android:layout_marginBottom="24dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginBottom="24dp">
+
+        <Button
+            android:id="@+id/button_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@android:drawable/ic_btn_speak_now"
+            android:padding="12dp"
+            android:layout_marginEnd="8dp"
+            android:text="Record" />
+
+        <Button
+            android:id="@+id/button_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@android:drawable/ic_media_play"
+            android:padding="12dp"
+            android:layout_marginEnd="8dp"
+            android:text="Play" />
+
+        <Button
+            android:id="@+id/button_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@android:drawable/ic_menu_save"
+            android:padding="12dp"
+            android:text="Save" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginBottom="24dp">
+        <Button
+            android:id="@+id/button_transcribe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@android:drawable/ic_menu_save"
+            android:padding="12dp"
+            android:text="Convert" />
+    </LinearLayout>
+
+<!--    <Button-->
+<!--        android:id="@+id/button_test"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:text="Test Audio"-->
+<!--        android:layout_marginBottom="16dp" />-->
+
+
+
+    <TextView
+        android:id="@+id/textView_result_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Transcribed Text:"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/textView_result"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#F5F5F5"
+        android:padding="16dp"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:scrollbars="vertical"
+        android:gravity="top|start" />
+
+</LinearLayout>
